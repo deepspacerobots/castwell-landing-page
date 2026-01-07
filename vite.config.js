@@ -3,7 +3,7 @@ import tailwindcss from "@tailwindcss/vite";
 import { resolve } from "path";
 
 export default defineConfig({
-  base: "/Castwell/",
+  base: "/castwell-landing-page/",
   plugins: [tailwindcss()],
   build: {
     rollupOptions: {
