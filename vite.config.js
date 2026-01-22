@@ -12,6 +12,7 @@ export default defineConfig({
         terms: resolve(__dirname, "terms.html"),
         privacy: resolve(__dirname, "privacy.html"),
         eula: resolve(__dirname, "eula.html"),
+        confirmEmail: resolve(__dirname, "confirm-email.html"),
       },
     },
   },
