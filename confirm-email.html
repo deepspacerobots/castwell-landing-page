@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Email confirmation</title>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+   </head>
+   <body>
+      <main class="min-h-screen bg-app text-app">
+         <header class="site-header">
+            <div class="container header-inner">
+               <a href="#top" class="logo" aria-label="Castwell home">
+               <img src="/src/assets/logo-castwell.svg" alt="Castwell" class="logo-img" />
+               </a>
+            </div>
+         </header>
+         <div class="grid grid-rows-[1fr_auto] min-h-[calc(100vh-100px)]">
+            <section  class="text-center px-20 flex-1 mt-28">
+               <h5 id="title" class="text-primary mb-4">Confirming email…</h5>
+               <p id="message" class="mb-6">
+                  We are verifying your email address.
+               </p>
+            </section>
+            <footer class="py-4 mt-auto">
+               <div class="container">
+                  <div class="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
+                     <!-- Left -->
+                     <p class="text-sm">
+                        © 2025 Castwell. Built for those who feel the call.
+                     </p>
+                     <!-- Right -->
+                     <nav class="flex gap-6 text-sm nav-desktop">
+                        <a href="./privacy.html" class="">Privacy</a>
+                        <a href="./terms.html" class="">Terms</a>
+                        <a href="./eula.html" class="">EULA</a>
+                        <a href="https://deepspacerobots.com/" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 dsr-badge">
+                           <svg width="20" height="20" viewBox="0 0 196 195" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M0 194.78V0H195.01V194.78H0Z" fill="#FFE600"/>
+                              <path d="M153.85 80.33V46.23H119.64V80.33H153.85Z" fill="black"/>
+                              <path d="M41.37 46.14V80.25H75.54V46.14H41.37Z" fill="black"/>
+                           </svg>
+                        </a>
+                     </nav>
+                  </div>
+               </div>
+            </footer>
+         </div>
+      </main>
+      <script type="module" src="/src/main.js"></script>
+      <script type="module" src="/src/confirm-email.js"></script>
+   </body>
+</html>
