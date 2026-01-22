@@ -6,14 +6,25 @@ const hash = new URLSearchParams(window.location.hash.substring(1));
 const error = hash.get('error');
 const errorDescription = hash.get('error_description');
 const type = hash.get('type');
+const access_token = hash.get('access_token');
+const expires_at = hash.get('expires_at');
 
-if (error) {
+const setError = () => {
 	title.textContent = 'Something went wrong';
 	message.textContent =
 		errorDescription?.replaceAll('+', ' ') ||
 		'The link is invalid or has expired.';
+};
+
+if (error || type !== 'email_change') {
+	setError();
 } else {
-	title.textContent = 'Email verified successfully';
-	message.textContent =
-		'Your email address has been successfully verified. You can now close this window and continue using Castweel without any issues.';
+	// const now = new Date();
+	if (!access_token) {
+		setError();
+	} else {
+		title.textContent = 'Email verified successfully';
+		message.textContent =
+			'Your email address has been successfully verified. You can now close this window and continue using Castweel without any issues.';
+	}
 }
