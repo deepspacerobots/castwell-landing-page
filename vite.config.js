@@ -13,6 +13,7 @@ export default defineConfig({
         privacy: resolve(__dirname, "privacy.html"),
         eula: resolve(__dirname, "eula.html"),
         confirmEmail: resolve(__dirname, "confirm-email.html"),
+        updatePassword: resolve(__dirname, "update-password.html"),
       },
     },
   },
