@@ -15,7 +15,7 @@ if (!isMobile) {
 	);
 } else {
 	const hash = new URLSearchParams(window.location.hash.substring(1));
-	const appUrl = 'castwellapp://(onboarding)/forgot-password' + hash;
+	const appUrl = 'castwellapp://forgot-password';
 
 	const error = hash.get('error');
 	const errorDescription = hash.get('error_description');
