@@ -20,9 +20,13 @@ if (!isMobile) {
 	const errorDescription = hash.get('error_description');
 	const type = hash.get('type');
 	const access_token = hash.get('access_token');
+	const refresh_token = hash.get('refresh_token');
+	const token_type = hash.get('token_type');
+	const expires_at = hash.get('expires_at');
+	const expires_in = hash.get('expires_in');
 
 	// Deeplink URL to open the Castwell app with the necessary parameters
-	const appUrl = `castwellapp://forgot-password?access_token=${access_token}&type=${type}&step=2`;
+	const appUrl = `castwellapp://forgot-password?access_token=${access_token}&type=${type}&refresh_token=${refresh_token}&token_type=${token_type}&expires_at=${expires_at}&expires_in=${expires_in}`;
 
 	if (error || errorDescription || type !== 'recovery') {
 		setError('', errorDescription?.replaceAll('+', ' '));
