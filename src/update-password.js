@@ -15,12 +15,14 @@ if (!isMobile) {
 	);
 } else {
 	const hash = new URLSearchParams(window.location.hash.substring(1));
-	const appUrl = 'castwellapp://forgot-password';
 
 	const error = hash.get('error');
 	const errorDescription = hash.get('error_description');
 	const type = hash.get('type');
 	const access_token = hash.get('access_token');
+
+	// Deeplink URL to open the Castwell app with the necessary parameters
+	const appUrl = `castwellapp://forgot-password?access_token=${access_token}&type=${type}&step=2`;
 
 	if (error || errorDescription || type !== 'recovery') {
 		setError('', errorDescription?.replaceAll('+', ' '));
@@ -32,6 +34,7 @@ if (!isMobile) {
 			message.textContent =
 				'Please make sure the Castwell app is installed on this phone. We’ll open it automatically to continue resetting your password.';
 
+			// Redirect to the app
 			window.location.href = appUrl;
 		}
 	}
