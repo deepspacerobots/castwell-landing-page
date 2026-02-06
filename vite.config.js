@@ -14,6 +14,8 @@ export default defineConfig({
         eula: resolve(__dirname, "eula.html"),
         confirmEmail: resolve(__dirname, "confirm-email.html"),
         updatePassword: resolve(__dirname, "update-password.html"),
+        contact: resolve(__dirname, "contact.html"),
+        deleteAccount: resolve(__dirname, "delete-account.html"),
       },
     },
   },
