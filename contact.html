@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CastWell Landing</title>
+  </head>
+  <body>
+    <style>
+      iframe.clickup-embed {
+        min-height: 80vh;
+      }
+      .site-header {
+        background: #212020;
+      }
+    </style>
+    <main class="min-h-screen bg-app text-app">
+      <header class="site-header">
+        <div class="container header-inner">
+          <a href="index.html" class="logo" aria-label="CastWell home">
+            <img
+              src="/src/assets/logo-castwell.svg"
+              alt="CastWell"
+              class="logo-img"
+            />
+          </a>
+        </div>
+        <svg
+          viewBox="0 0 1440 120"
+          preserveAspectRatio="none"
+          aria-hidden="true"
+          style="display: block; width: 100%; height: 80px"
+        >
+          <path
+            d="M0,64 C120,48 240,32 360,40 C480,48 600,80 720,84 C840,88 960,64 1080,52 C1200,40 1320,40 1440,48 L1440,120 L0,120 Z"
+            fill="#ffffff"
+          />
+        </svg>
+      </header>
+      <div class="relative">
+        <img
+          src="/src/assets/fish01.svg"
+          alt=""
+          aria-hidden="true"
+          class="hero-fish fish-5"
+        />
+        <img
+          src="/src/assets/fish02.svg"
+          alt=""
+          aria-hidden="true"
+          class="hero-fish fish-6"
+        />
+        <!-- <img
+          src="/src/assets/fish03.svg"
+          alt=""
+          aria-hidden="true"
+          class="hero-fish fish-7"
+        /> -->
+        <img
+          src="/src/assets/fish04.svg"
+          alt=""
+          aria-hidden="true"
+          class="hero-fish fish-8"
+        />
+      </div>
+
+      <section
+        class="pt-10 lg:pt-0"
+        style="background-color: white; margin-bottom: 0"
+      >
+        <div class="container">
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+            <div class="">
+              <h5 class="text-dark opacity-50 mb-4">FEEDBACK THAT MATTERS</h5>
+
+              <div class="mb-10 text-tertiary">
+                <h2>Your voice helps shape the community</h2>
+              </div>
+
+              <p class="text-dark mb-4">
+                Castwell is built with real people in mind. Your feedback helps
+                us understand what’s working, what’s missing, and how we can
+                better support those who feel the call.
+              </p>
+              <p class="text-dark">
+                It only takes a minute — and it makes a real difference.
+              </p>
+            </div>
+
+            <div class="">
+              <iframe
+                class="clickup-embed clickup-dynamic-height"
+                src="https://forms.clickup.com/8618139/f/8704v-18231/K7G224ZGDSG49EKTZW"
+                onwheel=""
+                width="100%"
+                height="100%"
+                style="background: transparent; border: 0 none"
+              ></iframe>
+              <script
+                async
+                src="https://app-cdn.clickup.com/assets/js/forms-embed/v1.js"
+              ></script>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="py-4">
+        <div class="container">
+          <div
+            class="flex flex-col gap-6 md:flex-row md:items-center md:justify-between"
+          >
+            <!-- Left -->
+            <p class="text-sm">
+              © 2025 CastWell. Built for those who feel the call.
+            </p>
+
+            <!-- Right -->
+            <nav class="flex gap-6 text-sm nav-desktop">
+              <a href="./privacy.html" class="">Privacy</a>
+              <a href="./terms.html" class="">Terms</a>
+              <a href="./eula.html" class="">EULA</a>
+              <a href="./contact.html" class="">Contact Us</a>
+              <a
+                href="https://deepspacerobots.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="flex items-center gap-2 dsr-badge"
+              >
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 196 195"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M0 194.78V0H195.01V194.78H0Z" fill="#FFE600" />
+                  <path
+                    d="M153.85 80.33V46.23H119.64V80.33H153.85Z"
+                    fill="black"
+                  />
+                  <path
+                    d="M41.37 46.14V80.25H75.54V46.14H41.37Z"
+                    fill="black"
+                  />
+                </svg>
+              </a>
+            </nav>
+          </div>
+        </div>
+      </footer>
+    </main>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

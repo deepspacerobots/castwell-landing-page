@@ -10,6 +10,7 @@
     --primary: #fae013;
     --secondary: #31b7ff;
     --tertiary: #ed6758;
+    --dark:#212020;
 
     /* Typography (Mobile first) */
     --h1: 36px; /* mobile */
@@ -135,6 +136,7 @@
   .text-primary { color: var(--primary); }
   .text-secondary { color: var(--secondary); }
   .text-tertiary { color: var(--tertiary); }
+  .text-dark { color: var(--dark); }
 
   .border-primary { border-color: var(--primary); }
 }
@@ -401,7 +403,7 @@
     height: auto;
     transform-origin: center;
     will-change: transform;
-
+    z-index: 9999;
     width: 80px;
   }
 
@@ -663,16 +665,18 @@ background: linear-gradient(0deg,rgba(33, 32, 32, 0) 0%, rgba(26, 51, 59, 1) 50%
     .fish-2 { top: 150px; right: 290px;  width: 48px;  transform: scaleX(-1);}
     .fish-3 { top: 230px; right: 70px;  width: 56px; transform: scaleX(-1);}
     .fish-4 { top: 40px; right: 20px;  width: 40px; }
+    
+    .fish-5 { top: 270px; right:300px; width: 78px; transform: scaleX(-1);}
+    .fish-6 { top: 150px; right: 290px;  width: 48px;  transform: scaleX(-1);}
+    .fish-7 { top: 230px; right: 70px;  width: 56px; transform: scaleX(-1);}
+    .fish-8 { top: 40px; right: 20px;  width: 40px; }
   }
 
   /* =========================
      Tablet + Desktop (grouped)
      (single section)
      ========================= */
-  @media (min-width: 768px) {
-
-    .hero {}
-    
+  @media (min-width: 768px) {    
 
     /* Blue fish */
     .fish-1 { 
@@ -683,7 +687,7 @@ background: linear-gradient(0deg,rgba(33, 32, 32, 0) 0%, rgba(26, 51, 59, 1) 50%
       animation-delay: 0s;
     }
 
-    /* red fish */
+    /* Red fish */
     .fish-2 {
       width: 64px;
       top: 190px;
@@ -701,11 +705,47 @@ background: linear-gradient(0deg,rgba(33, 32, 32, 0) 0%, rgba(26, 51, 59, 1) 50%
       animation-delay: -6.4s;
     }
 
-    /* green fish */
+    /* Green fish */
     .fish-4 {
       width: 42px;
       top: 105px;
       right: -50px;
+      animation-duration: 14.4s;
+      animation-delay: -9.1s;
+    }
+
+    /* Blue fish */
+    .fish-5 { 
+      width: 42px;
+      top: 130px;
+      left: 30%;
+      animation-duration: 10.2s;
+      animation-delay: 0s;
+    }
+
+    /* Red fish */
+    .fish-6 {
+      width: 44px;
+      top: 84px;
+      left: 20%;
+      animation-duration: 12.8s;
+      animation-delay: -3.2s;
+    }
+
+    /* White fish  */
+    .fish-7 {
+      width: 44px;
+      top: -120px;
+      right: 5%;
+      animation-duration: 11.6s;
+      animation-delay: -6.4s;
+    }
+
+    /* Green fish */
+    .fish-8 {
+      width: 42px;
+      top: 75px;
+      left: 50%;
       animation-duration: 14.4s;
       animation-delay: -9.1s;
     }
